@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+${1:MyCollection} = Backbone.Collection.extend
+	${2}
+]]></content>
+	<description>Backbone Collection</description>
+	<tabTrigger>bc</tabTrigger>
+</snippet>

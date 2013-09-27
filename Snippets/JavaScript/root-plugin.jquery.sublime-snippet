@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+;(function(\$, window, undefined){ "use strict";
+if (!\$.${1:myPlugin}) \$.${1:myPlugin} = function(opts) {
+  var defaults = {
+    ${2://plugin defaults}
+  };
+
+  var options = \$.extend(defaults, opts || {});
+
+  ${3://plugin logic}
+};
+})(jQuery, window);
+]]></content>
+	<tabTrigger>pluginr</tabTrigger>
+	<description>jQuery Root Plugin</description>
+</snippet>

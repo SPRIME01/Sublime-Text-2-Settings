@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+${1:MyModel} = Backbone.Model.extend
+	${2}
+]]></content>
+	<description>Backbone Model</description>
+	<tabTrigger>bm</tabTrigger>
+</snippet>

@@ -1,0 +1,84 @@
+<snippet>
+	<content><![CDATA[
+<?php
+/*
+	Plugin Name: ${1:My Plugin}
+	Plugin URI: ${2:http://www.example.com/plugins/my-plugin}
+	Version: ${3:0.1}
+	Description: ${4:This is a new plugin I created}
+	Author: ${5:Chris Roche}
+	Author URI: ${6:http://www.example.com}
+	Text Domain: ${7:my-plugin}
+	Domain Path: ${8:/lang}	
+
+	Copyright ${9:2012}  ${5:Chris Roche} (email : ${10:rodaine+wordpress@gmail.com})
+
+	This program is free software; you can redistribute it and/or modify
+	it under the terms of the GNU General Public License, version 2, as 
+	published by the Free Software Foundation.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program; if not, write to the Free Software
+	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+////////////////////////////////////////////////////////////////////////////////
+// PLUGIN CONSTANT DEFINITIONS
+////////////////////////////////////////////////////////////////////////////////
+
+//FILESYSTEM CONSTANTS
+define('${11:CJR}_PATH', plugin_dir_path(__FILE__));
+define('${11:CJR}_URL', plugin_dir_url(__FILE__));
+
+//DATABASE CONSTANTS
+// define('${11:CJR}_DB_VERSION', 0);
+// define('${11:CJR}_DB_VERSION_OPTION', '${12:cjr}_db_version');
+
+////////////////////////////////////////////////////////////////////////////////
+// PLUGIN DEPENDENCIES
+////////////////////////////////////////////////////////////////////////////////
+
+//require_once ${11:CJR}_PATH.'file.php';
+
+////////////////////////////////////////////////////////////////////////////////
+// ROOT PLUGIN CLASS
+////////////////////////////////////////////////////////////////////////////////
+
+final class ${11:CJR}_${13:My_Plugin} {
+
+	public static function activation() {
+		/* PLUGIN ACTIVATION LOGIC HERE */
+	}
+
+	public static function deactivation() {
+		/* PLUGIN DEACTIVATION LOGIC HERE */
+	}
+
+	public static function uninstall() {
+		/* PLUGIN DELETION LOGIC HERE */
+	}
+
+	public static function initialize() {
+		/* PLUGIN INITIALIZATION LOGIC */
+	}
+
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// PLUGIN INITIALIZATION
+////////////////////////////////////////////////////////////////////////////////
+
+register_activation_hook(__FILE__, array('${11:CJR}_${13:My_Plugin}', 'activation'));
+register_deactivation_hook(__FILE__, array('${11:CJR}_${13:My_Plugin}', 'deactivation'));
+register_uninstall_hook(__FILE__, array('${11:CJR}_${13:My_Plugin}', 'uninstall'));
+${11:CJR}_${13:My_Plugin}::initialize();
+
+]]></content>
+	<description>Wordpress Plugin</description>
+	<tabTrigger>wpp</tabTrigger>
+</snippet>
