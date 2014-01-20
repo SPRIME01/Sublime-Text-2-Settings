@@ -8,6 +8,7 @@
 		"Composer",
 		"CSScomb",
 		"DocBlockr",
+		"EJS",
 		"Google Spell Check",
 		"Handlebars",
 		"Jade",
@@ -18,6 +19,7 @@
 		"Nettuts+ Fetch",
 		"Nodejs",
 		"Package Control",
+		"PHP Completions Kit",
 		"PHP Namespace Command",
 		"PHP-Twig",
 		"Sass",
@@ -25,7 +27,6 @@
 		"SFTP",
 		"SideBarEnhancements",
 		"Terminal",
-		"Theme - Soda",
-		"Wordpress"
+		"Theme - Soda"
 	]
 }
